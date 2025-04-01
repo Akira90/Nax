@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Python - Functions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="python-logo.png" alt="Python Logo">
+            <h1>Learn Python</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="basics.html">Basics</a></li>
+                <li><a href="functions.html" class="active">Functions</a></li>
+                <li><a href="loops.html">Loops</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-page">
+            <h2>Python Functions</h2>
+            
+            <article>
+                <h3>What is a Function?</h3>
+                <p>A function is a block of code which only runs when it is called. You can pass data, known as parameters, into a function. A function can return data as a result.</p>
+                <div class="code-example">
+                    <pre><code># Defining a function
+def greet(name):
+    """This function greets the person passed in as parameter"""
+    print("Hello, " + name + "!")
+
+# Calling a function
+greet("Alice")  # Output: Hello, Alice!</code></pre>
+                </div>
+            </article>
+            
+            <article>
+                <h3>Function Arguments</h3>
+                <p>Information can be passed into functions as arguments. Arguments are specified after the function name, inside the parentheses.</p>
+                <div class="code-example">
+                    <pre><code># Function with multiple arguments
+def describe_pet(animal_type, pet_name):
+    """Display information about a pet."""
+    print(f"I have a {animal_type}.")
+    print(f"My {animal_type}'s name is {pet_name.title()}.")
+
+describe_pet('hamster', 'harry')</code></pre>
+                </div>
+            </article>
+            
+            <article>
+                <h3>Return Values</h3>
+                <p>Functions can return values to the caller. Use the <code>return</code> statement to send a value back.</p>
+                <div class="code-example">
+                    <pre><code># Function with return value
+def square(number):
+    """Return the square of a number."""
+    return number * number
+
+result = square(4)
+print(result)  # Output: 16</code></pre>
+                </div>
+            </article>
+            
+            <div class="navigation-buttons">
+                <a href="basics.html" class="nav-button">← Basics</a>
+                <a href="loops.html" class="nav-button">Loops →</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Learn Python. All rights reserved.</p>
+        
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

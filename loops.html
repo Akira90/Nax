@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Python - Loops</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="python-logo.png" alt="Python Logo">
+            <h1>Learn Python</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="basics.html">Basics</a></li>
+                <li><a href="functions.html">Functions</a></li>
+                <li><a href="loops.html" class="active">Loops</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-page">
+            <h2>Python Loops</h2>
+            
+            <article>
+                <h3>For Loops</h3>
+                <p>A <code>for</code> loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).</p>
+                <div class="code-example">
+                    <pre><code># Iterate over a list
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+
+# Output:
+# apple
+# banana
+# cherry</code></pre>
+                </div>
+            </article>
+            
+            <article>
+                <h3>While Loops</h3>
+                <p>With the <code>while</code> loop we can execute a set of statements as long as a condition is true.</p>
+                <div class="code-example">
+                    <pre><code># Count to 5 with a while loop
+count = 1
+while count <= 5:
+    print(count)
+    count += 1  # This is the same as count = count + 1
+
+# Output:
+# 1
+# 2
+# 3
+# 4
+# 5</code></pre>
+                </div>
+            </article>
+            
+            <article>
+                <h3>Loop Control Statements</h3>
+                <p>Python provides loop control statements to change the execution from its normal sequence:</p>
+                <ul>
+                    <li><code>break</code> - stops the loop entirely</li>
+                    <li><code>continue</code> - skips to the next iteration</li>
+                    <li><code>pass</code> - does nothing (used as a placeholder)</li>
+                </ul>
+                <div class="code-example">
+                    <pre><code># Example of break and continue
+for num in range(1, 6):
+    if num == 3:
+        continue  # Skip 3
+    if num == 5:
+        break     # Stop before 5
+    print(num)
+
+# Output:
+# 1
+# 2
+# 4</code></pre>
+                </div>
+            </article>
+            
+            <div class="navigation-buttons">
+                <a href="functions.html" class="nav-button">← Functions</a>
+                <a href="index.html" class="nav-button">Home →</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Learn Python. All rights reserved.</p>
+        
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
